@@ -14,7 +14,6 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.train.ramarai.postest.R
 import com.train.ramarai.postest.data.model.InOutInventoryItems
-import com.train.ramarai.postest.data.model.InventoryItem
 import com.train.ramarai.postest.databinding.FragmentOutcomeAddBinding
 import com.train.ramarai.postest.ui.main.outcome.OutcomeViewmodel
 import com.train.ramarai.postest.utils.SettingPreferences

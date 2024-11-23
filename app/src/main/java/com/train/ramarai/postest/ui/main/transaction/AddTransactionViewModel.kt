@@ -11,7 +11,6 @@ class AddTransactionViewModel : ViewModel() {
     private val auth = FirebaseAuth.getInstance()
 
     private val _isAuthenticated = MutableLiveData<Boolean>()
-    val isAuthenticated: LiveData<Boolean> get() = _isAuthenticated
 
     // LiveData untuk status loading
     private val _isLoading = MutableLiveData<Boolean>()

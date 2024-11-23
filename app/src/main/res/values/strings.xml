@@ -22,7 +22,6 @@
     <string name="title_account">Akun Anda :</string>
     <string name="home_username">John Doe</string>
     <string name="home_roles">Admin</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="transaksi_terbaru">Laporan Terbaru:</string>
     <string name="jenis_transaksi">Jenis Transaksi</string>
@@ -75,6 +74,10 @@
     <string name="add_new_item_desc">Keterangan</string>
     <string name="income_report">Laporan Penghasilan:</string>
     <string name="outcome_report">Laporan Pengeluaran:</string>
+    <string name="username_nav">Username</string>
+    <string name="role_nav">Role</string>
+    <string name="email_nav">Email</string>
+    <string name="mutiara_elektrik_nav">Mutiara Elektrik</string>
 
 
     <string-array name="item_types">

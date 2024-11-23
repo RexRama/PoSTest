@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:layout_marginTop="16dp"
-        android:text="Mutiara Elektrik"
+        android:text="@string/mutiara_elektrik_nav"
         android:layout_gravity="center"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:layout_marginTop="30dp"
-        android:text="Username"
+        android:text="@string/username_nav"
         android:layout_gravity="start"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:layout_marginTop="8dp"
-        android:text="Role"
+        android:text="@string/role_nav"
         android:layout_gravity="start"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:layout_marginTop="8dp"
-        android:text="Email"
+        android:text="@string/email_nav"
         android:layout_gravity="start"
         android:textSize="20sp"
         android:textStyle="bold"/>
