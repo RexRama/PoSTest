@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">MutiaraBiz</string>
+    <string name="title_login">Login ke Akun Anda</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_validate">Password harus mengandung minimal 8 karakter</string>
+    <string name="invalid_email">Format Email salah!</string>
+    <string name="login">Masuk</string>
+    <string name="account_regist">Registrasi Akun</string>
+    <string name="username">Username</string>
+    <string name="roles">Roles</string>
+    <string name="register">Daftar</string>
+    <string name="try_again">Coba Lagi</string>
+    <string name="registrasi_berhasil">Registrasi Berhasil!</string>
+    <string name="success_regist_message">Akun berhasil dibuat!</string>
+    <string name="generic_error">Email sudah terdaftar</string>
+    <string name="logout">Keluar</string>
+    <string name="atur_stok">Atur Stok</string>
+    <string name="income">Penghasilan</string>
+    <string name="outcome">Pengeluaran</string>
+    <string name="report">Laporan</string>
+    <string name="title_account">Akun Anda :</string>
+    <string name="home_username">John Doe</string>
+    <string name="home_roles">Admin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="transaksi_terbaru">Laporan Terbaru:</string>
+    <string name="jenis_transaksi">Jenis Transaksi</string>
+    <string name="transaction_amount">+Rp 30000</string>
+    <string name="tipe_transaksi">Tunai / Non-Tunai</string>
+    <string name="keterangan_transaksi">Keterangan</string>
+    <string name="transaction_date">10 October 2024</string>
+    <string name="add_inventory">Add Inventory</string>
+    <string name="search_inventory">Cari Barang</string>
+    <string name="filter_inventory">Filter Inventory</string>
+    <string name="item_name">Nama Barang</string>
+    <string name="item_type">Jenis Barang</string>
+    <string name="item_brand">Merk Barang</string>
+    <string name="stock_quantity">Jumlah Barang: 10</string>
+    <string name="update_stock">Update</string>
+    <string name="delete_stock">Hapus</string>
+    <string name="button_menu">Button Menu</string>
+    <string name="add_account">Tambah Akun</string>
+    <string name="logout_acc">LogOut</string>
+    <string name="role_options">Role options</string>
+    <string name="submit">Submit</string>
+    <string name="tambah_inventory">Tambah Inventory</string>
+    <string name="kode_barang">Kode Barang</string>
+    <string name="jenis_barang">Jenis Barang</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="merk_barang">Merk Barang</string>
+    <string name="harga_barang">Harga Barang</string>
+    <string name="jumlah_barang">Jumlah Barang</string>
+    <string name="update_inventory">Ubah Inventory</string>
+    <string name="money_format"> Rp. %1$,.0f</string>
+    <string name="money_format_in"> +Rp. %1$,.0f</string>
+    <string name="money_format_out"> -Rp. %1$,.0f</string>
+    <string name="stok">Stok:</string>
+    <string name="stock_placeholder">1000</string>
+    <string name="brand_item">Merek: </string>
+    <string name="price">Harga: </string>
+    <string name="price_placeholder">Rp 10.000</string>
+    <string name="double_formate">%.0f</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="retry">Coba Lagi</string>
+    <string name="error_request_timeout">Request Time Out</string>
+    <string name="item_price">\@Rp 10000</string>
+    <string name="placeholder_subTotal">Rp. 0</string>
+    <string name="add_new_item">Add new item</string>
+    <string name="jumlah_barang_terjual">Jumlah Barang Terjual</string>
+    <string name="jumlah_barang_masuk">Jumlah Barang Masuk</string>
+    <string name="harga_beli_barang">Harga Beli Barang</string>
+    <string name="harga_jual_barang">Harga Jual Barang</string>
+    <string name="drop_down_item">drop down item</string>
+    <string name="add_new_item_desc">Keterangan</string>
+    <string name="income_report">Laporan Penghasilan:</string>
+    <string name="outcome_report">Laporan Pengeluaran:</string>
+
+
+    <string-array name="item_types">
+        <item>Gembok</item>
+        <item>Mesin Bor</item>
+        <item>Cat</item>
+        <item>Terminal</item>
+        <item>Amplas</item>
+        <item>Lainnya</item>
+        <item>Benang</item>
+        <item>Bak Cuci</item>
+        <item>Engsel</item>
+        <item>Fitting Lampu</item>
+        <item>Gerinda</item>
+        <item>Tang</item>
+        <item>Lem</item>
+        <item>Glasbox</item>
+        <item>Gergaji</item>
+        <item>Dempul</item>
+        <item>PVC</item>
+        <item>Kabel</item>
+        <item>Klem</item>
+        <item>Keran</item>
+        <item>Kunci T</item>
+        <item>Kawat Las</item>
+        <item>Kikir</item>
+        <item>Kunci</item>
+        <item>Kuas</item>
+        <item>Acc</item>
+        <item>Cutter</item>
+        <item>Kunci Inggris</item>
+        <item>Kunci L</item>
+        <item>Lampu</item>
+        <item>Lakban</item>
+        <item>Las</item>
+        <item>Mcb</item>
+        <item>Meteran</item>
+        <item>Mata</item>
+        <item>Mata Bor</item>
+        <item>Obeng</item>
+        <item>Tape</item>
+        <item>Pompa</item>
+        <item>Saklar</item>
+        <item>Saringan</item>
+        <item>Siku</item>
+        <item>Serat</item>
+        <item>Selot</item>
+        <item>Skrup</item>
+        <item>Sifon</item>
+        <item>Sendok</item>
+        <item>Sika</item>
+        <item>Soda Api</item>
+        <item>Spul</item>
+        <item>Selang</item>
+        <item>Thinner</item>
+        <item>Handle</item>
+    </string-array>
+</resources>

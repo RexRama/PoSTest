@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PoSTest" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/background2</item>
+        <item name="colorPrimaryVariant">@color/card2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/background2</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/background2</item>
+        <item name="android:navigationBarColor">@color/card2</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="outlinedBox" parent="Widget.Material3.AutoCompleteTextView.OutlinedBox">
+        <item name="boxStrokeColor">@color/card2</item>
+        <item name="cursorColor">@color/card2</item>
+        <item name="hintTextColor">@color/card2</item>
+    </style>
+
+    <style name="outlinedBox2" parent="Widget.Material3.AutoCompleteTextView.OutlinedBox">
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="cursorColor">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+    </style>
+</resources>

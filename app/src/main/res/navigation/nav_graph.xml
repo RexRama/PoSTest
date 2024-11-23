@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/add_item"
+        android:name="com.train.ramarai.postest.ui.main.outcome.addItem.OutcomeAddFragment"
+        android:label="Add new item"
+        tools:layout="@layout/fragment_outcome_add">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.train.ramarai.postest.ui.main.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/homeFragment_to_inventoryFragment"
+            app:destination="@id/nav_inventory" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_income"
+            app:destination="@id/nav_income" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_incomeReport"
+            app:destination="@id/nav_incomeReport" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_outcomeReport"
+            app:destination="@id/nav_outcomeReport" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_outcome"
+            app:destination="@id/nav_outcome" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_inventory"
+        android:name="com.train.ramarai.postest.ui.main.inventory.InventoryFragment"
+        android:label="Inventory"
+        tools:layout="@layout/fragment_inventory">
+        <action
+            android:id="@+id/inventory_to_addInventory"
+            app:destination="@id/nav_addInventory" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_addInventory"
+        android:name="com.train.ramarai.postest.ui.main.inventory.add.UpdateInventoryFragment"
+        android:label="addInventory"
+        tools:layout="@layout/fragment_update_inventory">
+
+        <action
+            android:id="@+id/action_nav_addInventory_to_nav_inventory"
+            app:destination="@id/nav_inventory" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_transaction"
+        android:name="com.train.ramarai.postest.ui.main.transaction.TransactionFragment"
+        android:label="transaction"
+        tools:layout="@layout/fragment_transaction">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_incomeReport"
+        android:name="com.train.ramarai.postest.ui.main.income.report.IncomeReportFragment"
+        android:label="incomeReport"
+        tools:layout="@layout/fragment_income_report">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_outcomeReport"
+        android:name="com.train.ramarai.postest.ui.main.outcome.report.OutcomeReportFragment"
+        android:label="outcomeReport"
+        tools:layout="@layout/fragment_outcome_report">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_income"
+        android:name="com.train.ramarai.postest.ui.main.income.IncomeFragment"
+        android:label="income"
+        tools:layout="@layout/fragment_income">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_outcome"
+        android:name="com.train.ramarai.postest.ui.main.outcome.OutcomeFragment"
+        android:label="outcome"
+        tools:layout="@layout/fragment_outcome">
+
+        <action
+            android:id="@+id/action_nav_outcome_to_add_item"
+            app:destination="@id/add_item" />
+    </fragment>
+
+</navigation>
