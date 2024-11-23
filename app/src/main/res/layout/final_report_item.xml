@@ -28,10 +28,10 @@
             android:id="@+id/tv_title_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:text="@string/jenis_transaksi"
             android:textSize="14sp"
             android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_transaction_date"
             app:layout_constraintTop_toBottomOf="@id/tv_transaction_date" />
 
         <TextView
