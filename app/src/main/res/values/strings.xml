@@ -78,6 +78,12 @@
     <string name="role_nav">Role</string>
     <string name="email_nav">Email</string>
     <string name="mutiara_elektrik_nav">Mutiara Elektrik</string>
+    <string name="tanggal_akhir">Tanggal Akhir</string>
+    <string name="tanggal_awal">Tanggal Awal</string>
+    <string name="cari_transaksi">Cari Transaksi</string>
+    <string name="fab_add_transaction">FAB Add transaction</string>
+    <string name="fab_add_income">FAB Add Income</string>
+    <string name="fab_add_outcome">FAB Add Outcome</string>
 
 
     <string-array name="item_types">

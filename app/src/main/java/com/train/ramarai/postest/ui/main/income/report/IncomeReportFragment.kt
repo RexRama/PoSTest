@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.DatePicker
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -68,6 +69,7 @@ class IncomeReportFragment : Fragment() {
         }
 
         binding.cbSetLocation.setOnCheckedChangeListener { _, isChecked ->
+            binding.inputIncomeEndDate.isVisible = isChecked
             binding.inputIncomeEndDate.isEnabled = isChecked
             binding.editIncomeEndDate.setOnClickListener{
                 val dateSetListener =
@@ -107,11 +109,11 @@ class IncomeReportFragment : Fragment() {
             }
 
             // Log the selected date values for debugging
-            Log.d("OutcomeReportFragment", "Selected startDate: $startDatePicked, endDate: $endDatePicked")
+            Log.d("IncomeReportFragment", "Selected startDate: $startDatePicked, endDate: $endDatePicked")
 
             try {
                 // Pass the dates to ViewModel
-                incomeReportViewmodel.filterOutcomeByDate(startDate, endDate)
+                incomeReportViewmodel.filterOutcomeByDate(startDatePicked, endDatePicked)
             } catch (e: Exception) {
                 e.printStackTrace()
             }

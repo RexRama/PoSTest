@@ -108,7 +108,7 @@ class IncomeReportViewmodel : ViewModel() {
         )
 
         if (!isUserAuthenticated()) {
-            Log.w("OutcomeReportViewmodel", "User not authenticated")
+            Log.w("IncomeReportViewmodel", "User not authenticated")
             return
         }
 
@@ -177,7 +177,7 @@ class IncomeReportViewmodel : ViewModel() {
             .get()
             .addOnSuccessListener { documents ->
                 allIncome.clear()
-                Log.d("OutcomeReportViewModel", "Fetched ${documents.size()} filtered transactions")
+                Log.d("IncomeReportViewmodel", "Fetched ${documents.size()} filtered transactions")
 
                 documents.forEach { document ->
                     val transactionDate =
@@ -185,12 +185,12 @@ class IncomeReportViewmodel : ViewModel() {
                     val transactionCategory =
                         document.getString("transactionCategory") ?: return@forEach
                     Log.d(
-                        "OutcomeReportViewModel",
+                        "IncomeReportViewmodel",
                         "Transaction Date: $transactionDate, Category: $transactionCategory"
                     )
 
                     // Manually filter the results to ensure date matching
-                    if (transactionCategory == "Pengeluaran" &&
+                    if (transactionCategory == "Penghasilan" &&
                         transactionDate.after(startDatePreviousDayMaxTime) &&
                         transactionDate.before(endDateWithMaxTime)
                     ) {

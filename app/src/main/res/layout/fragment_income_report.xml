@@ -42,7 +42,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/tv_income_cariTanggal"
-                        android:text="Cari Transaksi"
+                        android:text="@string/cari_transaksi"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         android:layout_marginTop="8dp"
@@ -57,7 +57,7 @@
                         android:layout_marginLeft="4dp"
                         android:layout_marginTop="4dp"
                         android:layout_marginRight="4dp"
-                        android:hint="Tanggal Awal"
+                        android:hint="@string/tanggal_awal"
                         android:padding="10dp"
                         app:endIconMode="clear_text">
 
@@ -93,7 +93,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginStart="10dp"
-                            android:text="Tanggal Akhir"
+                            android:text="@string/tanggal_akhir"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -107,7 +107,9 @@
                         android:layout_marginTop="4dp"
                         android:layout_marginRight="4dp"
                         android:enabled="false"
-                        android:hint="Tanggal Akhir"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:hint="@string/tanggal_akhir"
                         android:padding="10dp"
                         app:endIconMode="clear_text">
 
@@ -129,7 +131,7 @@
                         android:layout_height="60dp"
                         android:layout_marginHorizontal="12dp"
                         android:id="@+id/bt_income_submit_date"
-                        android:text="Submit"
+                        android:text="@string/submit"
                         android:layout_marginBottom="10dp"
                         />
 

@@ -156,7 +156,7 @@ class OutcomeReportViewmodel : ViewModel() {
         // Prepare the query based on whether endDateParsed is provided or not
         val transactionsQuery = db.collection("transactions")
             .whereEqualTo("transactionCategory", "Pengeluaran")
-            .orderBy("transactionDate", Query.Direction.DESCENDING)
+            .orderBy("transactionDate", Query.Direction.ASCENDING)
             .apply {
                 Log.d(
                     "OutcomeReportViewModel",
