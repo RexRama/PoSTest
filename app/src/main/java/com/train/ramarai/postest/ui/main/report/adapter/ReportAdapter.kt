@@ -1,6 +1,5 @@
 package com.train.ramarai.postest.ui.main.report.adapter
 
-import android.provider.DocumentsContract.Root
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +9,6 @@ import com.google.firebase.Timestamp
 import com.train.ramarai.postest.R
 import com.train.ramarai.postest.data.model.InOutReportItem
 import com.train.ramarai.postest.databinding.FinalReportItemBinding
-import com.train.ramarai.postest.databinding.ReportItemBinding
 import java.text.SimpleDateFormat
 import java.util.Locale
 
