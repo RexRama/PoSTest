@@ -80,6 +80,7 @@ class HomeFragment : Fragment() {
         val fabAddTransaction = binding.fabAddTransaction
         val cvIncome = binding.cvIncome
         val cvOutcome = binding.cvOutcome
+        val cvReport = binding.cvReport
         val fabAddIncome = binding.fabAddIncome
         val fabAddOutcome = binding.fabAddOutcome
 
@@ -111,6 +112,10 @@ class HomeFragment : Fragment() {
 
         cvOutcome.setOnClickListener {
             navController.navigate(R.id.action_nav_home_to_nav_outcomeReport)
+        }
+
+        cvReport.setOnClickListener {
+            navController.navigate(R.id.action_nav_home_to_nav_report)
         }
 
 

@@ -94,7 +94,7 @@ class IncomeFragment : Fragment() {
             if (totalAmount > 0 && itemInBag.isNotEmpty()) {
                 // Add transaction report only if amount is valid and items exist
                 incomeViewmodel.addTransactionReport(transactionName, totalAmount, itemInBag)
-                navController.popBackStack()
+                navController.navigate(R.id.action_nav_income_to_nav_home)
             } else {
                 // Handle cases where totalAmount is zero or no items in bag
                 Toast.makeText(

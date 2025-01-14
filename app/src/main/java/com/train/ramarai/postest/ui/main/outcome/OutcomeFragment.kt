@@ -104,7 +104,7 @@ class OutcomeFragment : Fragment() {
             if (totalAmount > 0 && itemInBag.isNotEmpty()) {
 
                 outcomeViewmodel.addTransactionReport(transactionName, totalAmount, itemInBag)
-                navController.popBackStack()
+                navController.navigate(R.id.action_nav_outcome_to_nav_home)
             } else {
                 Toast.makeText(
                     requireContext(),

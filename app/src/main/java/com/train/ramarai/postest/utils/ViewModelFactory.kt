@@ -13,6 +13,7 @@ import com.train.ramarai.postest.ui.main.inventory.InventoryViewModel
 import com.train.ramarai.postest.ui.main.inventory.add.UpdateInventoryViewmodel
 import com.train.ramarai.postest.ui.main.outcome.OutcomeViewmodel
 import com.train.ramarai.postest.ui.main.outcome.report.OutcomeReportViewmodel
+import com.train.ramarai.postest.ui.main.report.ReportViewmodel
 import com.train.ramarai.postest.ui.main.transaction.AddTransactionViewModel
 
 @Suppress("UNCHECKED_CAST")
@@ -55,6 +56,9 @@ class ViewModelFactory(
             }
             modelClass.isAssignableFrom(OutcomeViewmodel::class.java) -> {
                 return OutcomeViewmodel() as T
+            }
+            modelClass.isAssignableFrom(ReportViewmodel::class.java) -> {
+                return ReportViewmodel() as T
             }
 
         }

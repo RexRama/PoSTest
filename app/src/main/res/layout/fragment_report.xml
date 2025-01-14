@@ -81,7 +81,7 @@
 
 
                         <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/input_income_startDate"
+                            android:id="@+id/input_report_startDate"
                             style="@style/outlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -93,12 +93,64 @@
                             app:endIconMode="clear_text">
 
                             <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edit_income_startDate"
+                                android:id="@+id/edit_report_startDate"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:ems="10"
                                 android:focusable="false"
                                 android:inputType="none"
+                                android:paddingStart="20dp"
+                                android:paddingEnd="40dp"
+                                tools:ignore="TextContrastCheck" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/checkbox_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginStart="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cb_setLocation"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/tanggal_akhir"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_report_endDate"
+                            style="@style/outlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            android:layout_marginRight="4dp"
+                            android:enabled="false"
+                            android:hint="@string/tanggal_akhir"
+                            android:padding="10dp"
+                            app:endIconMode="clear_text">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edit_report_endDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:inputType="none"
+                                android:focusable="false"
                                 android:paddingStart="20dp"
                                 android:paddingEnd="40dp"
                                 tools:ignore="TextContrastCheck" />
@@ -150,7 +202,7 @@
 
 
                         <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/report_rv_income"
+                            android:id="@+id/report_rv_reports"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
@@ -171,7 +223,7 @@
                             app:dividerColor="@color/black"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/report_rv_income" />
+                            app:layout_constraintTop_toBottomOf="@id/report_rv_reports" />
 
                         <TextView
                             android:id="@+id/tv_total_income"
@@ -184,18 +236,40 @@
                             app:layout_constraintEnd_toStartOf="@id/tv_report_income_total"
                             app:layout_constraintTop_toBottomOf="@id/divider_report_income" />
 
+                        <TextView
+                            android:id="@+id/tv_total_outcome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Total Pengeluaran: "
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@id/tv_report_income_total"
+                            app:layout_constraintTop_toBottomOf="@id/tv_total_income" />
+
 
 
                         <TextView
                             android:id="@+id/tv_report_income_total"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rp. 100.000"
+                            android:text="@string/rp_0"
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:layout_marginEnd="10dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/divider_report_income" />
+
+                        <TextView
+                            android:id="@+id/tv_report_outcome_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rp_0"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_report_income_total" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -208,5 +282,18 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_outcome"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,9 @@
         android:label="Add new item"
         tools:layout="@layout/fragment_outcome_add">
 
+        <action
+            android:id="@+id/action_add_item_to_nav_outcome"
+            app:destination="@id/nav_outcome" />
     </fragment>
 
     <fragment
@@ -33,8 +36,17 @@
         <action
             android:id="@+id/action_nav_home_to_nav_outcome"
             app:destination="@id/nav_outcome" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_report"
+            app:destination="@id/nav_report" />
 
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.train.ramarai.postest.ui.main.report.ReportFragment"
+        android:label="Report"
+        tools:layout="@layout/fragment_report" />
 
     <fragment
         android:id="@+id/nav_inventory"
@@ -88,6 +100,9 @@
         android:label="income"
         tools:layout="@layout/fragment_income">
 
+        <action
+            android:id="@+id/action_nav_income_to_nav_home"
+            app:destination="@id/nav_home" />
     </fragment>
 
     <fragment
@@ -99,6 +114,9 @@
         <action
             android:id="@+id/action_nav_outcome_to_add_item"
             app:destination="@id/add_item" />
+        <action
+            android:id="@+id/action_nav_outcome_to_nav_home"
+            app:destination="@id/nav_home" />
     </fragment>
 
 </navigation>

@@ -84,6 +84,7 @@
     <string name="fab_add_transaction">FAB Add transaction</string>
     <string name="fab_add_income">FAB Add Income</string>
     <string name="fab_add_outcome">FAB Add Outcome</string>
+    <string name="rp_0">Rp. 0</string>
 
 
     <string-array name="item_types">
