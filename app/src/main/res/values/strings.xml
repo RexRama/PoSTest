@@ -16,7 +16,7 @@
     <string name="generic_error">Email sudah terdaftar</string>
     <string name="logout">Keluar</string>
     <string name="atur_stok">Atur Stok</string>
-    <string name="income">Penghasilan</string>
+    <string name="income">Pendapatan</string>
     <string name="outcome">Pengeluaran</string>
     <string name="report">Laporan</string>
     <string name="title_account">Akun Anda :</string>
@@ -72,7 +72,7 @@
     <string name="harga_jual_barang">Harga Jual Barang</string>
     <string name="drop_down_item">drop down item</string>
     <string name="add_new_item_desc">Keterangan</string>
-    <string name="income_report">Laporan Penghasilan:</string>
+    <string name="income_report">Laporan Pendapatan:</string>
     <string name="outcome_report">Laporan Pengeluaran:</string>
     <string name="username_nav">Username</string>
     <string name="role_nav">Role</string>
@@ -85,6 +85,9 @@
     <string name="fab_add_income">FAB Add Income</string>
     <string name="fab_add_outcome">FAB Add Outcome</string>
     <string name="rp_0">Rp. 0</string>
+    <string name="total_pendapatan">Total Pendapatan:</string>
+    <string name="total_pengeluaran">Total Pengeluaran:</string>
+    <string name="grand_total">Grand Total:</string>
 
 
     <string-array name="item_types">

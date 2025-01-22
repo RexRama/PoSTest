@@ -98,7 +98,7 @@ class ReportViewmodel : ViewModel() {
         }
 
         val transactionQuery = db.collection("transactions")
-            .orderBy("transactionDate", Query.Direction.DESCENDING)
+            .orderBy("transactionDate", Query.Direction.ASCENDING)
             .apply {
                 Log.d(
                     "ReportViewmodel",

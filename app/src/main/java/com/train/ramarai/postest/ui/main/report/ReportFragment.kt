@@ -62,13 +62,26 @@ class ReportFragment : Fragment() {
         reportViewmodel.totalIncome.observe(viewLifecycleOwner) { totalIncome ->
             binding.tvReportIncomeTotal.text = getString(R.string.money_format_in, totalIncome)
             binding.tvReportIncomeTotal.setTextColor(requireContext().getColor(R.color.positive))
+            updateGrandTotal()
         }
 
         // Observe changes in totalOutcome and update UI
         reportViewmodel.totalOutcome.observe(viewLifecycleOwner) { totalOutcome ->
             binding.tvReportOutcomeTotal.text = getString(R.string.money_format_out, totalOutcome)
             binding.tvReportOutcomeTotal.setTextColor(requireContext().getColor(R.color.negative))
+            updateGrandTotal()
         }
+    }
+
+    private fun updateGrandTotal() {
+        val totalIncome = reportViewmodel.totalIncome.value ?: 0.0
+        val totalOutcome = reportViewmodel.totalOutcome.value ?: 0.0
+        val grandTotal = totalIncome - totalOutcome
+
+        binding.tvReportGrandTotal.text = getString(R.string.money_format, grandTotal)
+
+        val grandTotalColor = if (grandTotal >= 0 ) R.color.positive else R.color.negative
+        binding.tvReportGrandTotal.setTextColor(requireContext().getColor(grandTotalColor))
     }
 
 

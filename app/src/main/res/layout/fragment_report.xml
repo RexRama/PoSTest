@@ -230,7 +230,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
-                            android:text="Total Penghasilan: "
+                            android:text="@string/total_pendapatan"
                             android:textSize="16sp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toStartOf="@id/tv_report_income_total"
@@ -241,13 +241,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
-                            android:text="Total Pengeluaran: "
+                            android:text="@string/total_pengeluaran"
                             android:textSize="16sp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toStartOf="@id/tv_report_income_total"
                             app:layout_constraintTop_toBottomOf="@id/tv_total_income" />
-
-
 
                         <TextView
                             android:id="@+id/tv_report_income_total"
@@ -270,6 +268,42 @@
                             android:layout_marginEnd="10dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/tv_report_income_total" />
+
+                        <com.google.android.material.divider.MaterialDivider
+                            android:id="@+id/divider_grand_total"
+                            style="@style/Widget.MaterialComponents.MaterialDivider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="10dp"
+                            app:dividerColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/tv_total_outcome"
+                            app:layout_constraintTop_toBottomOf="@id/tv_report_outcome_total" />
+
+                        <TextView
+                            android:id="@+id/tv_grand_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/grand_total"
+                            android:layout_marginTop="4dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@id/tv_total_outcome"
+                            app:layout_constraintTop_toBottomOf="@id/divider_grand_total" />
+
+                        <TextView
+                            android:id="@+id/tv_report_grandTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rp_0"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tv_grand_total"/>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
